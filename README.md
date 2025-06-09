@@ -14,11 +14,11 @@ A fully functional e-commerce web application built with **Flask**, featuring us
 ## 📸 Screenshots
 
 ### User View
-![Home Page](screenshots/home.png)
-![Cart Page](screenshots/cart.png)
+![Home Page](screenshots/homepage-ecommerce.png)
+![Cart Page](screenshots/cart-ecommerce.png)
 
 ### Admin View
-![Admin Dashboard](screenshots/admin.png)
+![Admin Dashboard](screenshots/admin-ecommerce.png)
 
 ## Tech Stack
 
