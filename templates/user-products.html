@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Products</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='store.css') }}">
+</head>
+<body>
+<div class="logo">
+  <img src="{{ url_for('static', filename='store-logo.png') }}" alt="Product">
+  </div>
+
+<div class="nav-links">
+  <a href="{{ url_for('user') }}">home</a>
+     <a href="{{ url_for('products') }}">canvas prints</a>
+</div>
+
+
+
+<div class="auth-links">
+  <a href="{{ url_for('login') }}">login</a>
+  <a href="{{ url_for('signup') }}">sign up</a>
+  <button id="open-cart-btn" class="cart-header-btn">cart</button>
+</div>
+
+<section class="product-grid">
+  {% for product in products %}
+    <div class="product-card">
+      <img src="{{ url_for('static', filename=product['image']) }}" alt="{{ product['case_name'] }}">
+
+      <h3>{{ product['case_name'] }}</h3>
+      <p>${{ product['price'] }}</p>
+      <button class="add-to-cart">add to cart</button>
+    </div>
+  {% endfor %}
+</section>
+
+<div id="cart" class="cart-sidebar">
+  <button class="close-cart" onclick="closeCart()">✖</button>
+  <h2>Your Cart</h2>
+  <ul id="cart-items">
+
+  </ul>
+    <button id="checkout-btn" class="checkout-button">click to buy</button>
+</div>
+</div>
+<script src="{{ url_for('static', filename='store.js') }}"></script>
+</body>
+</html>
