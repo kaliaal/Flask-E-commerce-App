@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>alylah's place</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='store.css') }}">
+</head>
+<body>
+	<div class="logo">
+    <img src="{{ url_for('static', filename='store-logo.png') }}" alt="Logo">
+	</div>
+
+<div class="nav-links">
+  <a href="{{ url_for('home') }}">home</a>
+</div>
+
+<div class="auth-links">
+  <a href="{{ url_for('login') }}">login</a>
+    <a href="{{ url_for('signup') }}">sign up</a> 
+      <button id="open-cart-btn" class="cart-header-btn">cart</button>
+</div>
+
+
+<div class="background">
+  <h1>Get ready to shop!</h1>
+</div>
+<script src="{{ url_for('static', filename='store.js') }}"></script>
+</body>
+</html>
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>login</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='store.css') }}">
+
+</head>
+<body>
+<div class="logo">
+    <img src="{{ url_for('static', filename='store-logo.png') }}" alt="Logo">
+	</div>
+
+<div class="nav-links">
+    <a href="{{ url_for('home') }}">home</a>
+
+</div>
+
+<div class="auth-links">
+	<a href="{{ url_for ('login') }}">login</a>
+	<a href="{{ url_for ('signup') }}" class="signup">sign up</a>
+  <button id="open-cart-btn" class="cart-header-btn">cart</button>
+</div>
+<div class="form-container">
+<form method="POST">
+	<h3> admin login </h3>
+  <input type="text" name="username" placeholder="Username" required><br>
+  <input type="password" name="password" placeholder="Password" required><br>
+  <button type="submit">login</button>
+</form>
+  </div>
+
+</body>
+</html>
+

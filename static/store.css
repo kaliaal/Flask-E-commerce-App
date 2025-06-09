@@ -1,0 +1,413 @@
+.* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: 'Lucida Console', Monaco, monospace;
+  margin: 0;
+}
+
+
+/* Logo overlay centered over the middle image */
+.logo {
+  position: relative;
+  top: 8px; /* distance from top of banner */
+  left: 48%;
+  
+}
+
+
+.logo img {
+  max-width: 75px;
+  
+}
+
+/* Link section styling */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px 0;
+  border-top: 2px solid #000; /* top line */
+  font-family: 'Lucida Console', Monaco, monospace;
+ /* background-color: #ab8651; */
+  margin: 0; 
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  transition: color 0.3s;
+  margin-bottom: 0;
+}
+
+.nav-links a:hover {
+  color: #ff66c4; 
+}
+
+.background h1{
+text-align: center;
+}
+
+
+.auth-links {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  z-index: 1001;
+  font-family: 'Lucida Console', Monaco, monospace;
+}
+
+.auth-links a {
+  text-decoration: none;
+  color: #333;
+  margin-left: 20px;
+  font-size: 16px;
+  transition: color 0.3s, background-color 0.3s;
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+
+.auth-links a:hover {
+  color: #fff;
+  background-color: #ff66c4;
+}
+
+.auth-links .signup {
+  font-weight: bold;
+
+}
+
+.product-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  font-family: 'Lucida Console', Monaco, monospace;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  border-radius: 10px;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  margin: 15px 0 5px;
+  font-size: 18px;
+  color: #333;
+}
+
+.product-card p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.product-card button {
+  background-color: #ff66c4;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product-card button:hover {
+  background-color: #e255ae;
+}
+
+/* 🛒 Cart Sidebar Styling */
+.cart-sidebar {
+  position: fixed;
+  top: 0;
+  right: -400px; /* hidden by default */
+  width: 300px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+  padding: 20px;
+  z-index: 1001;
+  transition: right 0.3s ease;
+  font-family: 'Lucida Console', Monaco, monospace;
+}
+
+.cart-sidebar.open {
+  right: 0;
+}
+
+.cart-sidebar h2 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+.close-cart {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Cart item list */
+#cart-items {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+#cart-items li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.floating-cart-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1100;
+  background-color: #ff66c4;
+  color: white;
+  font-size: 22px;
+  padding: 14px 18px;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.auth-links {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  z-index: 1001;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-family: 'Lucida Console', Monaco, monospace;
+}
+
+/* Style all links & buttons similarly */
+.auth-links a,
+.auth-links button {
+  text-decoration: none;
+  color: #333;
+  background-color: transparent;
+  font-size: 20px;
+  padding: 6px 12px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Special styling for Sign Up */
+.auth-links .signup {
+
+  font-weight: bold;
+}
+
+/* Hover for links and buttons */
+.auth-links a:hover,
+.auth-links button:hover {
+  background-color: #ff66c4;
+  color: white;
+  border-color: #ff66c4;
+}
+
+/* Form Styling */
+.form-container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 40px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  text-align: center;
+  font-family: 'Lucida Console', Monaco, monospace;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-container h1 {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-container input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-container button {
+  padding: 10px;
+  font-size: 18px;
+  background-color: #ff66c4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+  background-color: #e255ae;
+}
+
+.form-container p {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.form-container a {
+  color: #ff66c4;
+  text-decoration: none;
+}
+
+.form-container a:hover {
+  text-decoration: underline;
+}
+
+.checkout-button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px 0;
+  background-color: #ff66c4;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.checkout-button:hover {
+  background-color: #e255ae;
+}
+
+
+.checkout-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: 'Lucida Console', Monaco, monospace;
+}
+
+.checkout-content {
+  display: flex;
+  gap: 50px;
+  margin-top: 40px;
+}
+
+.checkout-summary {
+  flex: 1;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.checkout-summary h2 {
+  margin-bottom: 20px;
+}
+
+.checkout-summary ul {
+  list-style: none;
+  padding: 0;
+}
+
+.checkout-summary li {
+  margin-bottom: 10px;
+}
+
+.total {
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.checkout-form {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.checkout-form h2 {
+  margin-top: 20px;
+}
+
+.checkout-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.place-order-button {
+  margin-top: 30px;
+  padding: 12px;
+  background-color: #ff66c4;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.place-order-button:hover {
+  background-color: #e255ae;
+}
+
+.typewriter-text {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #000;
+  font-size: 26px;
+  font-family: 'Lucida Console', monospace;
+  width: 0;
+  animation: typing 3s steps(30, end) forwards, blink 0.7s step-end infinite;
+  margin-top: 40px;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
