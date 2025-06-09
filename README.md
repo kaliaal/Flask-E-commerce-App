@@ -2,6 +2,10 @@
 
 A fully functional e-commerce web application built with **Flask**, featuring user login, product browsing, admin dashboard, and cart functionality.
 
+## Live Demo
+
+Hosted on [Render](https://flask-e-commerce-app.onrender.com)  
+
 ## Features
 
 - User authentication (sign up, login)
@@ -27,9 +31,5 @@ A fully functional e-commerce web application built with **Flask**, featuring us
 - **SQLite3**
 - **Jinja2**
 - **Gunicorn** (for production)
-
-## Live Demo
-
-Hosted on [Render](https://flask-e-commerce-app.onrender.com)  
 
 ## Admin Login details available upon request.
