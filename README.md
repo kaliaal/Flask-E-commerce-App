@@ -1,6 +1,6 @@
 # Flask E-Commerce App
 
-A fully functional e-commerce web application built with **Flask**, featuring user login, product browsing, admin dashboard, and cart functionality.
+A fully functional e-commerce web application built with Flask, featuring user login, product browsing, admin dashboard, and cart functionality.
 
 ## Live Demo
 
