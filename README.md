@@ -20,8 +20,6 @@ A fully functional e-commerce web application built with **Flask**, featuring us
 ### Admin View
 ![Admin Dashboard](screenshots/admin.png)
 
-> You can place your screenshot files inside a `/screenshots` folder in your GitHub repo and update the filenames above as needed.
-
 ## Tech Stack
 
 - **Python** (Flask)
