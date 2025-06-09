@@ -16,7 +16,7 @@ def products():
         cursor = conn.cursor()
         cursor.execute("SELECT case_name, price, image FROM products ")
         products = cursor.fetchall()
-    return render_template('ino.html',products=products)
+    return render_template('user-products.html',products=products)
 
 
 @app.route('/admin', methods=['GET', 'POST'])
