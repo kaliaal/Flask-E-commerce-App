@@ -22,7 +22,8 @@ Hosted on [Render](https://flask-e-commerce-app.onrender.com/)
 
 ### User View
 ![Home Page](screenshots/homepage-ecommerce.png)
-![Cart Page](screenshots/cart-ecommerce.png)
+![Cart Page](screenshots/Updated-Cart-Screenshot.png)
+![Purchase Animation](screenshots/ecommerce-purchase.png)
 
 ### Admin View
 ![Admin Dashboard](screenshots/admin-ecommerce.png)
