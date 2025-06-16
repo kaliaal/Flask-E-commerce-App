@@ -32,4 +32,7 @@ Hosted on [Render](https://flask-e-commerce-app.onrender.com/)
 - **Jinja2**
 - **Gunicorn** (for production)
 
+## Demo Video
+[Watch the video here](Flask-Store-Demo.mov)
+
 ## Admin Login details available upon request.
