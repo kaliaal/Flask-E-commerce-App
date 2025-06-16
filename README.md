@@ -11,9 +11,9 @@ Hosted on [Render](https://flask-e-commerce-app.onrender.com/)
 
 ## Features
 
-- User authentication (sign up, login)
+- Secure user authentication (sign up, login)
 - Add-to-cart and checkout system
-- Admin dashboard to manage products
+- Admin dashboard to manage products (add, remove)
 - SQLite3 database integration
 - Responsive front-end layout
 - Image upload/display for products
