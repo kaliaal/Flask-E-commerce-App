@@ -6,6 +6,9 @@ A fully functional e-commerce web application built with Flask, featuring user l
 
 Hosted on [Render](https://flask-e-commerce-app.onrender.com/)  
 
+## Demo Video
+[Watch the video here](Flask-Store-Demo.mov)
+
 ## Features
 
 - User authentication (sign up, login)
@@ -31,8 +34,5 @@ Hosted on [Render](https://flask-e-commerce-app.onrender.com/)
 - **SQLite3**
 - **Jinja2**
 - **Gunicorn** (for production)
-
-## Demo Video
-[Watch the video here](Flask-Store-Demo.mov)
 
 ## Admin Login details available upon request.
