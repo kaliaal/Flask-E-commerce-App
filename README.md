@@ -26,7 +26,7 @@ Hosted on [Render](https://flask-e-commerce-app.onrender.com/)
 ![Purchase Animation](screenshots/ecommerce-purchase.png)
 
 ### Admin View
-![Admin Dashboard](screenshots/admin-ecommerce.png)
+![Admin Dashboard](screenshots/Updated-Admin-View.png)
 
 ## Tech Stack
 
