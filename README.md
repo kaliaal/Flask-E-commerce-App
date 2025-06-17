@@ -26,7 +26,7 @@ The initial delay (after the first 'click to buy' action) is due to Render cold 
 ### User View
 ![Home Page](screenshots/homepage-ecommerce.png)
 ![Cart Page](screenshots/Updated-Cart-Screenshot.png)
-![Purchase Animation](screenshots/ecommerce-purchase.png)
+![Purchase Animation](screenshots/New-Purchase-Demo.png)
 
 ### Admin View
 ![Admin Dashboard](screenshots/Updated-Admin-View.png)
