@@ -19,7 +19,7 @@ Hosted on [Render](https://flask-e-commerce-app.onrender.com/)
 - Image upload/display for products
 
 ## 🗒️ Note
-The initial delay (after the first 'click to buy' action) is due to Render cold start and database session initialization. This only occurs once per user session.
+The initial delay (after the first 'click to buy' action) is due to Render cold start and database session initialization. This only occurs once per new user session.
 
 ## 📸 Screenshots
 
