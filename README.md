@@ -7,7 +7,7 @@ A fully functional e-commerce web application built with Flask, featuring user l
 Hosted on [Render](https://flask-e-commerce-app.onrender.com/)  
 
 ## Demo Video
-[Watch the video here](Flask-Store-Demo.mov)
+[Watch the video here](New-Flask-Demo.mov)
 
 ## Features
 
